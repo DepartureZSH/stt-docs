@@ -1,0 +1,21 @@
+.features {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.imageContainer {
+  margin: 0 auto;
+  max-width: 1600px;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+.templateImage {
+  display: block;
+  height: auto;
+  width: 100%;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 10px;
+}

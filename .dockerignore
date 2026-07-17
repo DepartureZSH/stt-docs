@@ -1,0 +1,12 @@
+node_modules
+build
+.docusaurus
+.git
+.github
+.vscode
+.idea
+coverage
+*.log
+.env
+.env.*
+
