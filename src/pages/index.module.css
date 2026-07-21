@@ -4,20 +4,132 @@
  */
 
 .heroBanner {
-  padding: 4rem 0;
-  text-align: center;
+  min-height: calc(100svh - var(--ifm-navbar-height));
+  padding: clamp(5rem, 12vh, 9rem) 0 7rem;
   position: relative;
   overflow: hidden;
+  color: #f7fbf9;
+  background:
+    radial-gradient(circle at 82% 12%, rgba(112, 224, 183, 0.22), transparent 28%),
+    linear-gradient(135deg, #092d28 0%, #10493e 52%, #176653 100%);
+}
+
+.heroBanner::after {
+  content: '';
+  position: absolute;
+  right: -5vw;
+  bottom: -20%;
+  width: min(54vw, 760px);
+  aspect-ratio: 1;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 72px rgba(255, 255, 255, 0.035),
+    0 0 0 144px rgba(255, 255, 255, 0.02);
+}
+
+.heroInner {
+  position: relative;
+  z-index: 1;
+}
+
+.eyebrow {
+  margin: 0 0 1.5rem;
+  color: #8be5c3;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  animation: riseIn 560ms ease-out both;
+}
+
+.heroTitle {
+  max-width: none;
+  margin: 0;
+  color: #fff;
+  font-size: clamp(3.25rem, 7vw, 6.4rem);
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+  white-space: nowrap;
+  animation: riseIn 620ms 60ms ease-out both;
+}
+
+.heroSubtitle {
+  max-width: 620px;
+  margin: 2rem 0 0;
+  color: rgba(247, 251, 249, 0.78);
+  font-size: clamp(1.05rem, 1.7vw, 1.35rem);
+  line-height: 1.75;
+  animation: riseIn 620ms 120ms ease-out both;
 }
 
 @media screen and (max-width: 996px) {
   .heroBanner {
-    padding: 2rem;
+    min-height: auto;
+    padding: 5rem 0 6rem;
+  }
+
+  .heroTitle {
+    max-width: 760px;
+    white-space: normal;
   }
 }
 
 .buttons {
   display: flex;
   align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 2.5rem;
+  animation: riseIn 620ms 180ms ease-out both;
+}
+
+.primaryButton {
+  border-color: #8be5c3;
+  color: #0b392f;
+  background: #8be5c3;
+}
+
+.primaryButton:hover {
+  border-color: #abefd6;
+  color: #072c25;
+  background: #abefd6;
+  transform: translateY(-2px);
+}
+
+.secondaryButton {
+  border-color: rgba(255, 255, 255, 0.34);
+  color: #fff;
+  background: transparent;
+}
+
+.secondaryButton:hover {
+  border-color: rgba(255, 255, 255, 0.72);
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-2px);
+}
+
+.primaryButton,
+.secondaryButton {
+  transition: transform 160ms ease, background-color 160ms ease, border-color 160ms ease;
+}
+
+@keyframes riseIn {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .eyebrow,
+  .heroTitle,
+  .heroSubtitle,
+  .buttons {
+    animation: none;
+  }
 }

@@ -43,8 +43,7 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/DepartureZSH/stt-docs/edit/main/',
         },
         blog: false,
         theme: {
@@ -55,8 +54,7 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/template.png',
     colorMode: {
       respectPrefersColorScheme: true,
     },
@@ -72,6 +70,16 @@ const config: Config = {
           sidebarId: 'tutorialSidebar',
           position: 'left',
           label: '文档',
+        },
+        {
+          to: '/docs/user-guide/complete-workflow',
+          label: '完整流程',
+          position: 'left',
+        },
+        {
+          to: '/docs/user-guide/faq-glossary',
+          label: '常见问题',
+          position: 'left',
         },
         {
           href: 'https://github.com/DepartureZSH/stt-docs',
