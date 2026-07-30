@@ -13,7 +13,7 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero', styles.heroBanner)}>
       <div className={clsx('container', styles.heroInner)}>
-        <p className={styles.eyebrow}>午时智能教务 · 用户手册</p>
+        <p className={styles.eyebrow}>时奕智能教务 · 用户手册</p>
         <Heading as="h1" className={styles.heroTitle}>
           {siteConfig.title}
         </Heading>
@@ -42,7 +42,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="午时智能教务系统用户手册：学校数据、课程计划、约束配置、智能排课与结果导出。">
+      description="时奕智能教务系统用户手册：学校数据、课程计划、约束配置、智能排课与结果导出。">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

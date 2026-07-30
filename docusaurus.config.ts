@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: '午时智能教务系统',
+  title: '时奕智能教务系统',
   tagline: '致力于为学校提供务实、智能的教务管理解决方案。',
   favicon: 'img/favicon.ico',
 
@@ -59,9 +59,9 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: '午时智能教务系统',
+      title: '时奕智能教务系统',
       logo: {
-        alt: '午时智能教务系统 Logo',
+        alt: '时奕智能教务系统 Logo',
         src: 'img/logo.svg',
       },
       items: [

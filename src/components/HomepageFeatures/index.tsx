@@ -22,7 +22,7 @@ export default function HomepageFeatures(): ReactNode {
         <img
           className={styles.templateImage}
           src={templateImage}
-          alt="午时智能教务系统节次模板设置界面"
+          alt="时奕智能教务系统节次模板设置界面"
         />
       </div>
       <div className={styles.workflow} aria-label="排课流程">
