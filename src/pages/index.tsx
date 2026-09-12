@@ -28,7 +28,7 @@ function HomepageHeader() {
           </Link>
           <Link
             className={clsx('button button--lg', styles.secondaryButton)}
-            to="/docs/user-guide/complete-workflow">
+            to="/docs/user-guide/start/complete-workflow">
             查看完整流程
           </Link>
         </div>

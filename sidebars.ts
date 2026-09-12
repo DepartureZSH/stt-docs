@@ -16,14 +16,14 @@ const sidebars: SidebarsConfig = {
   tutorialSidebar: [
     'intro',
     'user-guide/overview',
-    'user-guide/quick-start',
     {
       type: 'category',
       label: '一、新手指南',
       collapsed: false,
       items: [
-        'user-guide/accounts-organizations-projects',
-        'user-guide/complete-workflow',
+        'user-guide/start/quick-start',
+        'user-guide/start/accounts-organizations-projects',
+        'user-guide/start/complete-workflow',
       ],
     },
     {
@@ -58,7 +58,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: '五、帮助',
-      items: ['user-guide/faq-glossary'],
+      items: ['user-guide/recharge', 'user-guide/faq-glossary'],
     },
   ],
 };

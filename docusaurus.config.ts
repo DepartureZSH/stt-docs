@@ -72,7 +72,7 @@ const config: Config = {
           label: '文档',
         },
         {
-          to: '/docs/user-guide/complete-workflow',
+          to: '/docs/user-guide/start/complete-workflow',
           label: '完整流程',
           position: 'left',
         },
@@ -80,11 +80,6 @@ const config: Config = {
           to: '/docs/user-guide/faq-glossary',
           label: '常见问题',
           position: 'left',
-        },
-        {
-          href: 'https://github.com/DepartureZSH/stt-docs',
-          label: 'GitHub',
-          position: 'right',
         },
       ],
     },
@@ -108,8 +103,8 @@ const config: Config = {
           title: '更多',
           items: [
             {
-              label: 'GitHub',
-              href: 'https://github.com/DepartureZSH/stt-docs',
+              label: '公司官网',
+              href: 'https://www.karios.site',
             },
           ],
         },
